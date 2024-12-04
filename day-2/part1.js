@@ -47,6 +47,7 @@ function doTheThingTwo(input) {
     } else if (findDistance(row) && compareArr(row, sortedDesc)) {
       count++;
     } else {
+      //this whole block can be refactored using recursive function, the above solves part one
       let count2 = 0;
       let newInput = utilThing(row);
       newInput.forEach((newReport) => {
@@ -62,6 +63,7 @@ function doTheThingTwo(input) {
       if (count2 !== 0) {
         count++;
       }
+      //to here
     }
   });
   console.log(count);
